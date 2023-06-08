@@ -26,19 +26,25 @@
         font-family: Arial, sans-serif;
       }
 
-      /* Style the header section */
-      header {
+      /* Center align the header and introduction section */
+      header,
+      #introduction {
         text-align: center;
-        padding: 20px;
+      }
+
+      /* Apply background color and padding to the header */
+      header {
         background-color: #fff;
-        margin-bottom: 20px;
+        padding: 20px;
       }
 
-      h1 {
-        font-size: 24px;
-        margin-bottom: 10px;
+      /* Apply background color and padding to the introduction section */
+      #introduction {
+        background-color: #fff;
+        padding: 20px;
       }
 
+      /* Style the profile picture */
       .profile-picture {
         width: 150px;
         height: 150px;
@@ -47,75 +53,52 @@
         margin-bottom: 10px;
       }
 
-      /* Style the introduction section */
-      #introduction {
-        background-color: #fff;
-        padding: 20px;
+      /* Add spacing between sections */
+      section {
         margin-bottom: 20px;
+        padding: 20px;
+        background-color: #fff;
+      }
+
+      /* Style the section headings */
+      h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      /* Style the project links */
+      .project-link {
+        color: #ff8c00;
+        font-weight: bold;
+      }
+
+      /* Apply black text color to content */
+      p,
+      ul,
+      li {
+        color: #000;
+      }
+
+      /* Apply styling to make content readable */
+      p {
+        line-height: 1.5;
+      }
+
+      ul {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+
+      /* Style the footer */
+      footer {
         text-align: center;
-      }
-
-      #introduction h2 {
-        font-size: 18px;
-        margin-bottom: 10px;
-      }
-
-      #introduction ul {
-        list-style-type: none;
-      }
-
-      /* Style the education section */
-      #education {
-        background-color: #fff;
         padding: 20px;
-        margin-bottom: 20px;
-      }
-
-      #education h2 {
-        font-size: 18px;
-        margin-bottom: 10px;
-      }
-
-      /* Style the skills section */
-      #skills {
-        background-color: #fff;
-        padding: 20px;
-        margin-bottom: 20px;
-      }
-
-      #skills h2 {
-        font-size: 18px;
-        margin-bottom: 10px;
-      }
-
-      /* Style the work experience section */
-      #work-experience {
-        background-color: #fff;
-        padding: 20px;
-        margin-bottom: 20px;
-      }
-
-      #work-experience h2 {
-        font-size: 18px;
-        margin-bottom: 10px;
-      }
-
-      /* Style the projects section */
-      #projects {
-        background-color: #fff;
-        padding: 20px;
-        margin-bottom: 20px;
-      }
-
-      #projects h2 {
-        font-size: 18px;
-        margin-bottom: 10px;
       }
     </style>
   </head>
   <body>
-    <!-- Content goes here -->
     <div class="frame">
+      <!-- Content goes here -->
       <header>
         <h1>Resume</h1>
       </header>
@@ -159,11 +142,9 @@
       <section id="skills">
         <h2>Skills</h2>
         <ul>
-          <li>Data Analysis</li>
           <li>Python</li>
-          <li>SQL</li>
-          <li>HTML/CSS</li>
           <li>JavaScript</li>
+          <li>HTML/CSS</li>
           <li>Django</li>
           <li>React</li>
         </ul>
@@ -173,23 +154,14 @@
         <h2>Work Experience</h2>
         <ul>
           <li>
-            <strong>Full Stack Developer (Self-taught)</strong><br />
-            Self-employed<br />
+            <strong>Full Stack Developer</strong><br />
+            Personal Projects & Learning<br />
             Date - Present<br />
-            - Developed personal projects to gain hands-on experience in full
-            stack development.<br />
-            - Acquired skills in HTML, CSS, JavaScript, Django, React, and other
-            relevant technologies through self-learning.<br />
-            - Implemented best practices and industry standards in software
-            development.<br />
-            - Collaborated with online communities and participated in
-            open-source projects.<br />
-            - Demonstrated strong problem-solving and critical thinking
-            abilities through project development.<br />
-            - Continuously expanding knowledge and staying up-to-date with the
-            latest web development trends.<br />
-            - Actively seeking opportunities to apply skills and contribute to
-            real-world projects.
+            - Developed personal projects using Django, REST API, and React.<br />
+            - Implemented responsive design and styled the content for optimal
+            readability.<br />
+            - Gained practical experience in full-stack web development through
+            self-learning and online resources.<br />
           </li>
         </ul>
       </section>
@@ -201,7 +173,7 @@
             <strong
               ><a
                 href="https://github.com/Douglous-Sobei/proshop-django-react"
-                target="_blank"
+                class="project-link"
                 >eCommerce Web Application (Django & React)</a
               ></strong
             ><br />
@@ -216,55 +188,58 @@
             process.<br />
             - Integrated payment gateways and order tracking functionalities.<br />
             - Implemented responsive design and optimized performance for a
-            smooth user experience.
+            smooth user experience.<br />
           </li>
           <li>
             <strong
               ><a
                 href="https://github.com/Douglous-Sobei/LoanDatafromProsper"
-                target="_blank"
-                >Data Analysis Project (Loan Data from Prosper)</a
+                class="project-link"
+                >Loan Data Analysis</a
               ></strong
             ><br />
-            - Analyzed loan data from Prosper to identify trends and
-            insights.<br />
-            - Performed data cleaning, preprocessing, and exploratory data
-            analysis using Python and Pandas.<br />
-            - Created visualizations and statistical models to extract
-            meaningful information from the data.<br />
-            - Presented findings and recommendations based on the analysis
-            results.<br />
+            - Analyzed loan data from Prosper using Python and data analysis
+            techniques.<br />
+            - Conducted exploratory data analysis, data cleaning, and feature
+            engineering.<br />
+            - Performed statistical analysis and created visualizations to
+            identify trends and insights.<br />
+            - Developed predictive models to assess loan default risks and make
+            data-driven recommendations.<br />
+            - Documented the analysis process and findings in a comprehensive
+            report.<br />
           </li>
           <li>
             <strong
               ><a
                 href="https://github.com/Douglous-Sobei/cardeal_project"
-                target="_blank"
+                class="project-link"
                 >Car Dealership Management System (Django)</a
               ></strong
             ><br />
-            - Developed a web-based car dealership management system using
-            Django.<br />
-            - Designed and implemented features for inventory management, sales
-            tracking, and customer management.<br />
-            - Integrated user authentication and role-based access control for
-            secure system administration.<br />
-            - Implemented data storage and retrieval using a relational
-            database.<br />
-            - Ensured scalability, performance, and security considerations
-            during the development process.<br />
-          </li>
-          <li>
-            <strong>Personal Website</strong><br />
-            - Created a personal website to showcase my projects and skills.<br />
-            - Developed the website using HTML, CSS, and JavaScript.<br />
-            - Designed the user interface and implemented responsive design for
-            optimal viewing across devices.<br />
-            - Incorporated interactive elements and animations to enhance user
-            engagement.<br />
+            - Built a web application for managing car dealership operations
+            using Django.<br />
+            - Implemented features for inventory management, customer
+            registration, and sales tracking.<br />
+            - Integrated authentication and access control for different user
+            roles.<br />
+            - Developed a user-friendly interface for efficient data entry and
+            retrieval.<br />
+            - Ensured data security and privacy through proper handling and
+            storage practices.<br />
           </li>
         </ul>
       </section>
+
+      <footer>
+        <p>
+          Contact information:
+          <a href="mailto:douglousmangoyi@gmail.com"
+            >douglousmangoyi@gmail.com</a
+          >
+          | +254701132861
+        </p>
+      </footer>
     </div>
   </body>
 </html>
