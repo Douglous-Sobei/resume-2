@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Resume</title>
     <style>
       /* CSS styles go here */
@@ -25,21 +26,16 @@
         font-family: Arial, sans-serif;
       }
 
-      /* Center align the content */
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        text-align: center;
-      }
-
       /* Style the header section */
       header {
+        text-align: center;
+        padding: 20px;
+        background-color: #fff;
         margin-bottom: 20px;
       }
 
       h1 {
-        font-size: 28px;
+        font-size: 24px;
         margin-bottom: 10px;
       }
 
@@ -51,55 +47,75 @@
         margin-bottom: 10px;
       }
 
-      /* Style the sections */
-      section {
+      /* Style the introduction section */
+      #introduction {
         background-color: #fff;
         padding: 20px;
         margin-bottom: 20px;
-        text-align: left;
+        text-align: center;
       }
 
-      section h2 {
-        font-size: 20px;
+      #introduction h2 {
+        font-size: 18px;
         margin-bottom: 10px;
       }
 
-      section ul {
+      #introduction ul {
         list-style-type: none;
-        padding-left: 0;
       }
 
-      /* Style the links */
-      section ul li a {
-        color: #333;
-        text-decoration: none;
-        display: inline-block;
-        padding: 5px 10px;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
+      /* Style the education section */
+      #education {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
       }
 
-      section ul li a:hover {
-        background-color: #eee;
+      #education h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
       }
 
-      /* Project-specific colors */
-      .project-link-1 {
-        background-color: #ffcc66;
+      /* Style the skills section */
+      #skills {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
       }
 
-      .project-link-2 {
-        background-color: #66ccff;
+      #skills h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
       }
 
-      .project-link-3 {
-        background-color: #66ff66;
+      /* Style the work experience section */
+      #work-experience {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      #work-experience h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      /* Style the projects section */
+      #projects {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      #projects h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
       }
     </style>
   </head>
   <body>
     <!-- Content goes here -->
-    <div class="container">
+    <div class="frame">
       <header>
         <h1>Resume</h1>
       </header>
@@ -108,7 +124,7 @@
         <h2>Introduction</h2>
         <ul>
           <li><strong>Name:</strong> Douglous Sobei</li>
-          <li><strong>Profession:</strong> Data Analyst | Software Engineer</li>
+          <li><strong>Profession:</strong> Full Stack Developer</li>
           <li>
             <strong>Profile Picture:</strong>
             <img
@@ -157,12 +173,23 @@
         <h2>Work Experience</h2>
         <ul>
           <li>
-            <strong>Data Analyst Intern</strong><br />
-            Company Name, City, Country<br />
-            Date - Date<br />
-            - Conducted data cleaning and preprocessing tasks<br />
-            - Performed statistical analysis and created visualizations<br />
-            - Collaborated with team members to develop data-driven solutions
+            <strong>Full Stack Developer (Self-taught)</strong><br />
+            Self-employed<br />
+            Date - Present<br />
+            - Developed personal projects to gain hands-on experience in full
+            stack development.<br />
+            - Acquired skills in HTML, CSS, JavaScript, Django, React, and other
+            relevant technologies through self-learning.<br />
+            - Implemented best practices and industry standards in software
+            development.<br />
+            - Collaborated with online communities and participated in
+            open-source projects.<br />
+            - Demonstrated strong problem-solving and critical thinking
+            abilities through project development.<br />
+            - Continuously expanding knowledge and staying up-to-date with the
+            latest web development trends.<br />
+            - Actively seeking opportunities to apply skills and contribute to
+            real-world projects.
           </li>
         </ul>
       </section>
@@ -171,7 +198,13 @@
         <h2>Projects</h2>
         <ul>
           <li>
-            <strong>eCommerce Web Application (Django & React)</strong><br />
+            <strong
+              ><a
+                href="https://github.com/Douglous-Sobei/proshop-django-react"
+                target="_blank"
+                >eCommerce Web Application (Django & React)</a
+              ></strong
+            ><br />
             - Built a full-stack eCommerce web application using Django and
             React.<br />
             - Developed the backend using Django to handle product management,
@@ -183,45 +216,52 @@
             process.<br />
             - Integrated payment gateways and order tracking functionalities.<br />
             - Implemented responsive design and optimized performance for a
-            smooth user experience.<br />
-            - GitHub Repository:
-            <a
-              class="project-link-1"
-              href="https://github.com/Douglous-Sobei/proshop-django-react"
-              >https://github.com/Douglous-Sobei/proshop-django-react</a
-            >
+            smooth user experience.
           </li>
           <li>
-            <strong>Data Analysis Project (Python)</strong><br />
-            - Analyzed loan data from Prosper using Python and data analysis
-            techniques.<br />
-            - Performed data cleaning, exploratory data analysis, and
-            statistical modeling.<br />
-            - Generated visualizations to present insights and findings.<br />
-            - Extracted meaningful information and provided recommendations
-            based on the analysis.<br />
-            - GitHub Repository:
-            <a
-              class="project-link-2"
-              href="https://github.com/Douglous-Sobei/LoanDatafromProsper"
-              >https://github.com/Douglous-Sobei/LoanDatafromProsper</a
-            >
+            <strong
+              ><a
+                href="https://github.com/Douglous-Sobei/LoanDatafromProsper"
+                target="_blank"
+                >Data Analysis Project (Loan Data from Prosper)</a
+              ></strong
+            ><br />
+            - Analyzed loan data from Prosper to identify trends and
+            insights.<br />
+            - Performed data cleaning, preprocessing, and exploratory data
+            analysis using Python and Pandas.<br />
+            - Created visualizations and statistical models to extract
+            meaningful information from the data.<br />
+            - Presented findings and recommendations based on the analysis
+            results.<br />
           </li>
           <li>
-            <strong>Car Dealership Management System (Django)</strong><br />
-            - Developed a web-based management system for a car dealership using
+            <strong
+              ><a
+                href="https://github.com/Douglous-Sobei/cardeal_project"
+                target="_blank"
+                >Car Dealership Management System (Django)</a
+              ></strong
+            ><br />
+            - Developed a web-based car dealership management system using
             Django.<br />
-            - Implemented features for inventory management, customer tracking,
-            and sales tracking.<br />
-            - Designed a user-friendly interface using HTML/CSS.<br />
-            - Integrated database functionality for data storage and
-            retrieval.<br />
-            - GitHub Repository:
-            <a
-              class="project-link-3"
-              href="https://github.com/Douglous-Sobei/cardeal_project"
-              >https://github.com/Douglous-Sobei/cardeal_project</a
-            >
+            - Designed and implemented features for inventory management, sales
+            tracking, and customer management.<br />
+            - Integrated user authentication and role-based access control for
+            secure system administration.<br />
+            - Implemented data storage and retrieval using a relational
+            database.<br />
+            - Ensured scalability, performance, and security considerations
+            during the development process.<br />
+          </li>
+          <li>
+            <strong>Personal Website</strong><br />
+            - Created a personal website to showcase my projects and skills.<br />
+            - Developed the website using HTML, CSS, and JavaScript.<br />
+            - Designed the user interface and implemented responsive design for
+            optimal viewing across devices.<br />
+            - Incorporated interactive elements and animations to enhance user
+            engagement.<br />
           </li>
         </ul>
       </section>
