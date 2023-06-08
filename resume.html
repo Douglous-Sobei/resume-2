@@ -1,105 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Resume</title>
-  </head>
-  <body>
-    <header>
-      <h1>Douglous Sobei</h1>
-      <p>Data Analyst | Software Engineer</p>
-      <header>
-        <h1>Douglous Sobei</h1>
-        <p>Data Analyst | Software Engineer</p>
-        <img class="profile-picture" src="./images/profile.jpeg" alt="Profile Picture">
-      </header>
-      
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Resume</title>
+  <style>
+    /* CSS styles go here */
+    /* Reset default margin and padding */
+    body,
+    h1,
+    h2,
+    h3,
+    p,
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+    }
 
-    <section class="education">
-      <h2>Education</h2>
-      <div class="education-item">
-        <h3>Bachelor of Public Management and Development</h3>
-        <p>Jomo Kenyatta University of Agriculture and Technology</p>
-      </div>
-      <div class="education-item">
-        <h3>Nano Degree in Data Analysis</h3>
-        <p>Data Analysis Program - ALX</p>
-        <p>Issued by: ALX Africa</p>
-      </div>
-      <div class="education-item">
-        <h3>Nano Degree in Software Engineering</h3>
-        <p>Software Engineering Program - ALX</p>
-        <p>Issued by: ALX Africa</p>
-      </div>
-    </section>
+    /* Set a background color and text color for the body */
+    body {
+      background-color: #f1f1f1;
+      color: #333;
+      font-family: Arial, sans-serif;
+    }
 
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>Data Analysis</li>
-        <li>Python</li>
-        <li>SQL</li>
-        <li>HTML/CSS</li>
-        <li>JavaScript</li>
-        <li>Django</li>
-        <li>React</li>
-      </ul>
-    </section>
+    /* Style the header section */
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      margin-bottom: 20px;
+    }
 
-    <section>
-      <h2>Work Experience</h2>
-      <div>
-        <h3>Data Analyst Intern</h3>
-        <p>Company Name, City, Country</p>
-        <p>Date - Date</p>
-        <ul>
-          <li>Conducted data cleaning and preprocessing tasks</li>
-          <li>Performed statistical analysis and created visualizations</li>
-          <li>
-            Collaborated with team members to develop data-driven solutions
-          </li>
-        </ul>
-      </div>
-    </section>
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
 
-    <section>
-      <h2>Projects</h2>
-      <div>
-        <h3>eCommerce Web Application (Django & React)</h3>
-        <p>
-          Built a full-stack eCommerce web application using Django and React.
-        </p>
-        <ul>
-          <li>
-            Developed the backend using Django to handle product management,
-            user authentication, and order processing.
-          </li>
-          <li>
-            Implemented RESTful APIs for frontend communication and data
-            retrieval.
-          </li>
-          <li>
-            Designed and developed the frontend using React, including the user
-            interface, product listing, cart functionality, and checkout
-            process.
-          </li>
-          <li>
-            Integrated payment gateways and order tracking functionalities.
-          </li>
-          <li>
-            Implemented responsive design and optimized performance for a smooth
-            user experience.
-          </li>
-        </ul>
-      </div>
-    </section>
+    .profile-picture {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
 
-    <!-- Code injected by live-server -->
-    <script>
-      // JavaScript code for live reload functionality
-    </script>
-  </body>
+    /* Style the introduction section */
+    #introduction {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    #introduction h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    #introduction ul {
+      list-style-type: none;
+    }
+
+    /* Style the education section */
+    #education {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    #education h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    /* Style the skills section */
+    #skills {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    #skills h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    /* Style the work experience section */
+    #work-experience {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    #work-experience h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    /* Style the projects section */
+    #projects {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    #projects h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Content goes here -->
+  <header>
+    <h1>Resume</h1>
+  </header>
+
+  <section id="introduction">
+    <h2>Introduction</h2>
+    <ul>
+      <li><strong>Name:</strong> Douglous Sobei</li>
+      <li><strong>Profession:</strong> Data Analyst | Software Engineer</li>
+      <li><strong>Profile Picture:</strong> <img class="profile-picture" src="./images/profile.jpeg" alt="Profile Picture"></li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>
+        <strong>Bachelor of Public Management and Development</strong><br>
+        Jomo Kenyatta University of Agriculture and Technology
+      </li>
+      <li>
+        <strong>Nano Degree in Data Analysis</strong><br>
+        Data Analysis Program - ALX<br>
+        Issued by: ALX Africa
+      </li>
+      <li>
+        <strong>Nano Degree in Software Engineering</strong><br>
+        Software Engineering Program - ALX<br>
+        Issued by: ALX Africa
+      </li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Data Analysis</li>
+      <li>Python</li>
+      <li>SQL</li>
+      <li>HTML/CSS</li>
+      <li>JavaScript</li>
+      <li>Django</li>
+      <li>React</li>
+    </ul>
+  </section>
+
+  <section id="work-experience">
+    <h2>Work Experience</h2>
+    <ul>
+      <li>
+        <strong>Data Analyst Intern</strong><br>
+        Company Name, City, Country<br>
+        Date - Date<br>
+        - Conducted data cleaning and preprocessing tasks<br>
+        - Performed statistical analysis and created visualizations<br>
+        - Collaborated with team members to develop data-driven solutions
+      </li>
+      <li>
+        <strong>Freelance Web Development</strong><br>
+        - Developed and deployed responsive websites for clients, including frontend and backend development.<br>
+        - Utilized technologies such as HTML/CSS, JavaScript, Django, and React.<br>
+        - GitHub Repository: <a href="https://github.com/Douglous-Sobei/cardeal_project">cardeal_project</a>
+      </li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <strong>eCommerce Web Application (Django & React)</strong><br>
+        - Built a full-stack eCommerce web application using Django and React.<br>
+        - Developed the backend using Django to handle product management, user authentication, and order processing.<br>
+        - Implemented RESTful APIs for frontend communication and data retrieval.<br>
+        - Designed and developed the frontend using React, including the user interface, product listing, cart functionality, and checkout process.<br>
+        - Integrated payment gateways and order tracking functionalities.<br>
+        - Implemented responsive design and optimized performance for a smooth user experience.<br>
+        - GitHub Repository: <a href="https://github.com/Douglous-Sobei/proshop-django-react">proshop-django-react</a>
+      </li>
+      <li>
+        <strong>Data Analysis Project</strong><br>
+        - Analyzed loan data from Prosper to identify patterns and trends.<br>
+        - Conducted exploratory data analysis and applied statistical techniques for insights.<br>
+        - Created visualizations to communicate findings.<br>
+        - GitHub Repository: <a href="https://github.com/Douglous-Sobei/LoanDatafromProsper">LoanDatafromProsper</a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Code injected by live-server -->
+  <script>
+    // JavaScript code for live reload functionality
+  </script>
+</body>
 </html>
