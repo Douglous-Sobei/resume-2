@@ -1,0 +1,95 @@
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color and text color for the body */
+body {
+  background-color: #f1f1f1;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the header section */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Style the education section */
+.education {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.education-item {
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Style the skills section */
+section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 10px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* Style the work experience section */
+section div {
+  margin-bottom: 20px;
+}
+
+/* Style the projects section */
+section div ul {
+  margin-left: 20px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  ul {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
