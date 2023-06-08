@@ -13,6 +13,16 @@
         margin: 20px;
       }
 
+      /* ...existing CSS styles... */
+
+      /* Style the profile picture */
+      .profile-picture {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+
       /* Reset default margin and padding */
       body,
       h1,
@@ -117,18 +127,13 @@
         margin-bottom: 10px;
       }
 
-      /* Circular profile picture */
-      .profile-picture {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-bottom: 10px;
+      /* Style the project links */
+      .project-link {
+        color: #0099ff;
       }
 
-      /* Remove bullets from lists */
-      ul {
-        list-style-type: none;
+      .project-link:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
@@ -142,7 +147,7 @@
       <section id="introduction">
         <h2>Introduction</h2>
         <p>
-          <strong>Name:</strong> Douglous Sobei<br />
+          <strong>Name:</strong> Your Name<br />
           <strong>Profession:</strong> Data Analyst | Software Engineer<br />
           <strong>Profile Picture:</strong>
           <img
@@ -218,7 +223,13 @@
             process.<br />
             - Integrated payment gateways and order tracking functionalities.<br />
             - Implemented responsive design and optimized performance for a
-            smooth user experience.
+            smooth user experience.<br />
+            <strong>GitHub Link:</strong>
+            <a
+              class="project-link"
+              href="https://github.com/Douglous-Sobei/proshop-django-react"
+              >ProShop Django React</a
+            >
           </li>
           <li>
             <strong>Data Analysis Project (Python & SQL)</strong><br />
@@ -226,7 +237,13 @@
             - Performed data cleaning, preprocessing, and exploratory data
             analysis.<br />
             - Created visualizations to illustrate key findings and insights.<br />
-            - Extracted meaningful information to inform business decisions.
+            - Extracted meaningful information to inform business decisions.<br />
+            <strong>GitHub Link:</strong>
+            <a
+              class="project-link"
+              href="https://github.com/Douglous-Sobei/LoanDatafromProsper"
+              >Loan Data from Prosper</a
+            >
           </li>
           <li>
             <strong>Car Dealership Management System (Django)</strong><br />
@@ -237,7 +254,11 @@
             - Integrated user authentication and authorization for secure
             access.<br />
             - Designed an intuitive user interface for easy navigation and data
-            entry.
+            entry.<br />
+            - GitHub link:
+            <a href="https://github.com/Douglous-Sobei/cardeal_project"
+              >https://github.com/Douglous-Sobei/cardeal_project</a
+            >
           </li>
         </ul>
       </section>
