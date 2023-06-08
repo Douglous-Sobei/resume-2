@@ -3,10 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
     <title>Resume</title>
     <style>
       /* CSS styles go here */
+      /* Frame styling */
+      .frame {
+        border: 2px solid #333;
+        padding: 20px;
+        margin: 20px;
+      }
+
       /* Reset default margin and padding */
       body,
       h1,
@@ -26,73 +32,77 @@
         font-family: Arial, sans-serif;
       }
 
-      /* Center align the header and introduction section */
-      header,
-      #introduction {
-        text-align: center;
-      }
-
-      /* Apply background color and padding to the header */
+      /* Style the header section */
       header {
-        background-color: #fff;
+        text-align: center;
         padding: 20px;
+        background-color: #fff;
+        margin-bottom: 20px;
       }
 
-      /* Apply background color and padding to the introduction section */
-      #introduction {
-        background-color: #fff;
-        padding: 20px;
-      }
-
-      /* Style the profile picture */
-      .profile-picture {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
+      h1 {
+        font-size: 24px;
         margin-bottom: 10px;
       }
 
-      /* Add spacing between sections */
-      section {
-        margin-bottom: 20px;
-        padding: 20px;
+      /* Style the introduction section */
+      #introduction {
         background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
       }
 
-      /* Style the section headings */
-      h2 {
+      #introduction h2 {
         font-size: 18px;
         margin-bottom: 10px;
       }
 
-      /* Style the project links */
-      .project-link {
-        color: #ff8c00;
-        font-weight: bold;
-      }
-
-      /* Apply black text color to content */
-      p,
-      ul,
-      li {
-        color: #000;
-      }
-
-      /* Apply styling to make content readable */
-      p {
-        line-height: 1.5;
-      }
-
-      ul {
-        list-style-type: disc;
-        padding-left: 20px;
-      }
-
-      /* Style the footer */
-      footer {
-        text-align: center;
+      /* Style the education section */
+      #education {
+        background-color: #fff;
         padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      #education h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      /* Style the skills section */
+      #skills {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      #skills h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      /* Style the work experience section */
+      #work-experience {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      #work-experience h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      /* Style the projects section */
+      #projects {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      #projects h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
       }
     </style>
   </head>
@@ -106,8 +116,8 @@
       <section id="introduction">
         <h2>Introduction</h2>
         <ul>
-          <li><strong>Name:</strong> Douglous Sobei</li>
-          <li><strong>Profession:</strong> Full Stack Developer</li>
+          <li><strong>Name:</strong> Your Name</li>
+          <li><strong>Profession:</strong> Data Analyst | Software Engineer</li>
           <li>
             <strong>Profile Picture:</strong>
             <img
@@ -142,9 +152,11 @@
       <section id="skills">
         <h2>Skills</h2>
         <ul>
+          <li>Data Analysis</li>
           <li>Python</li>
-          <li>JavaScript</li>
+          <li>SQL</li>
           <li>HTML/CSS</li>
+          <li>JavaScript</li>
           <li>Django</li>
           <li>React</li>
         </ul>
@@ -154,14 +166,14 @@
         <h2>Work Experience</h2>
         <ul>
           <li>
-            <strong>Full Stack Developer</strong><br />
-            Personal Projects & Learning<br />
+            <strong>Full Stack Developer (Training and Self-Study)</strong
+            ><br />
             Date - Present<br />
-            - Developed personal projects using Django, REST API, and React.<br />
-            - Implemented responsive design and styled the content for optimal
-            readability.<br />
-            - Gained practical experience in full-stack web development through
-            self-learning and online resources.<br />
+            - Actively seeking employment opportunities as a Full Stack
+            Developer<br />
+            - Engaged in self-study and training to enhance technical skills<br />
+            - Completed various online courses and projects to showcase
+            expertise<br />
           </li>
         </ul>
       </section>
@@ -170,13 +182,7 @@
         <h2>Projects</h2>
         <ul>
           <li>
-            <strong
-              ><a
-                href="https://github.com/Douglous-Sobei/proshop-django-react"
-                class="project-link"
-                >eCommerce Web Application (Django & React)</a
-              ></strong
-            ><br />
+            <strong>eCommerce Web Application (Django & React)</strong><br />
             - Built a full-stack eCommerce web application using Django and
             React.<br />
             - Developed the backend using Django to handle product management,
@@ -191,55 +197,34 @@
             smooth user experience.<br />
           </li>
           <li>
-            <strong
-              ><a
-                href="https://github.com/Douglous-Sobei/LoanDatafromProsper"
-                class="project-link"
-                >Loan Data Analysis</a
-              ></strong
-            ><br />
-            - Analyzed loan data from Prosper using Python and data analysis
-            techniques.<br />
-            - Conducted exploratory data analysis, data cleaning, and feature
-            engineering.<br />
-            - Performed statistical analysis and created visualizations to
-            identify trends and insights.<br />
-            - Developed predictive models to assess loan default risks and make
-            data-driven recommendations.<br />
-            - Documented the analysis process and findings in a comprehensive
-            report.<br />
+            <strong>Data Analysis Project (Python & SQL)</strong><br />
+            - Analyzed loan data from Prosper using Python and SQL.<br />
+            - Performed data cleaning, preprocessing, and exploratory data
+            analysis.<br />
+            - Created visualizations to illustrate key findings and insights.<br />
+            - Extracted meaningful information to inform business decisions.<br />
           </li>
           <li>
-            <strong
-              ><a
-                href="https://github.com/Douglous-Sobei/cardeal_project"
-                class="project-link"
-                >Car Dealership Management System (Django)</a
-              ></strong
-            ><br />
-            - Built a web application for managing car dealership operations
-            using Django.<br />
-            - Implemented features for inventory management, customer
-            registration, and sales tracking.<br />
-            - Integrated authentication and access control for different user
-            roles.<br />
-            - Developed a user-friendly interface for efficient data entry and
-            retrieval.<br />
-            - Ensured data security and privacy through proper handling and
-            storage practices.<br />
+            <strong>Car Dealership Management System (Django)</strong><br />
+            - Developed a web-based car dealership management system using
+            Django.<br />
+            - Implemented features such as inventory management, customer
+            management, and sales tracking.<br />
+            - Integrated user authentication and authorization for secure
+            access.<br />
+            - Designed an intuitive user interface for easy navigation and data
+            entry.<br />
           </li>
         </ul>
       </section>
 
-      <footer>
-        <p>
-          Contact information:
-          <a href="mailto:douglousmangoyi@gmail.com"
-            >douglousmangoyi@gmail.com</a
-          >
-          | +254701132861
-        </p>
-      </footer>
+      <section id="contact">
+        <h2>Contact Information</h2>
+        <ul>
+          <li><strong>Email:</strong> douglousmangoyi@gmail.com</li>
+          <li><strong>Phone:</strong> +254701132861</li>
+        </ul>
+      </section>
     </div>
   </body>
 </html>
